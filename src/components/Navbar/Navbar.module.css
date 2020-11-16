@@ -1,0 +1,9 @@
+.nav {
+    grid-area: n;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: lightslategray solid 3px;
+    padding: 10px;
+}

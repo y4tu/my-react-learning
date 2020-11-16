@@ -1,0 +1,9 @@
+.navLink {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    color: lightslategray;
+    margin: 10px auto 0;
+}

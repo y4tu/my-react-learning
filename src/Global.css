@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "n c";
+    grid-gap: 20px;
+    grid-template-rows: 130px 1fr;
+    grid-template-columns: 200px 1fr;
+    padding-top: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
