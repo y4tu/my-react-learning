@@ -4,10 +4,10 @@ import classes from "./NewPost.module.css"
 const NewPost = () => {
     return (
         <form className={classes.newPost}>
-            <h2 className={classes.title}>My posts</h2>
+            <h2 className={classes.title}>Add new post</h2>
             <div className={classes.addNew}>
-                <textarea className={classes.textarea} placeholder="Write your minds!"></textarea>
-                <button className={classes.send} type="button"/>
+                <textarea className={classes.textarea} name="message" placeholder="Write your minds!" rows="10"></textarea>
+                <button className={classes.send} type="button">Post it!</button>
             </div>
         </form>
     )

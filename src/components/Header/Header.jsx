@@ -6,9 +6,9 @@ const Header = () => {
         <header className={classes.header}>
             <a href="#" className={classes.logoLink}>
                 <div className={classes.logoWrapper}>
-                    <img src="/img/logo.svg" className={classes.logo} width="100" height="100" alt="Логотип"/>
+                    <img src="/img/logo.svg" className={classes.logo} width="70" height="70" alt="Логотип"/>
                 </div>
-                <h1 className={classes.title}>Лайкосеть</h1>
+                <h1 className={classes.title}>Like_o_net</h1>
             </a>
         </header>
     )

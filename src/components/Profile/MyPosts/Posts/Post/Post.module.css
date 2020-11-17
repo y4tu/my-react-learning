@@ -1,14 +1,13 @@
 .post {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    padding-left: 0;
+    padding: 10px 10px 10px 0;
     font-size: 20px;
     line-height: 20px;
     font-weight: normal;
     text-transform: none;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .message {
@@ -18,7 +17,7 @@
 .avatar {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-right: 10px;
 }
 

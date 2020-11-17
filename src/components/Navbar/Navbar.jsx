@@ -5,11 +5,11 @@ import Item from "./Item/Item";
 const Navbar = () => {
     return (
         <nav className={classes.nav}>
-            <Item option="Profile" />
-            <Item option="Messages" />
-            <Item option="News" />
-            <Item option="Music" />
-            <Item option="Settings" />
+            <Item route="/profile" option="Profile" />
+            <Item route="/dialogs" option="Dialogs" />
+            <Item route="/news" option="News" />
+            <Item route="/music" option="Music" />
+            <Item route="/settings" option="Settings" />
         </nav>
 
     )

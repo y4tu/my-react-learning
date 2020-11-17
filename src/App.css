@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -16,12 +20,11 @@ html {
 }
 
 body {
+    background: lightgray;
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
-    background-color: lightgray;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 .app-wrapper {
@@ -32,11 +35,24 @@ body {
     grid-gap: 20px;
     grid-template-rows: 130px 1fr;
     grid-template-columns: 200px 1fr;
-    padding-top: 20px;
+    background-color: lightgray;
+    padding: 20px;
 }
 
-.image {
+img {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+.app-content-wrapper {
+    grid-area: c;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: lightslategray solid 3px;
+    padding: 20px;
+}
+
+a.active {
+    color: dimgrey;
 }

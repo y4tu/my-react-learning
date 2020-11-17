@@ -7,9 +7,9 @@ import MyPosts from "./MyPosts/MyPosts";
 const Profile = () => {
     return (
         <section className={classes.content}>
-            <Wallpaper />
-            <Id />
-            <MyPosts />
+            <Wallpaper/>
+            <Id/>
+            <MyPosts/>
         </section>
     )
 };

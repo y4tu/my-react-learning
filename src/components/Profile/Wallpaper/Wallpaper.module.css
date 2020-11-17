@@ -6,3 +6,7 @@
     background: none;
     border: none;
 }
+
+.image {
+    border-radius: 6px;
+}
