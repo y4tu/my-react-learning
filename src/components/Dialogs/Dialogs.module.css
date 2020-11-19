@@ -3,12 +3,3 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.title {
-    flex-basis: 100%;
-    color: lightslategray;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    margin: 0 0 20px 50px;
-}

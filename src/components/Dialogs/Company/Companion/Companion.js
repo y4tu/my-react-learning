@@ -1,6 +1,6 @@
-import React from "react";
-import classes from "./Companion.module.css"
-import {NavLink} from "react-router-dom";
+import React from 'react';
+import classes from './Companion.module.css'
+import {NavLink} from 'react-router-dom';
 
 const Companion = (props) => {
     return (
