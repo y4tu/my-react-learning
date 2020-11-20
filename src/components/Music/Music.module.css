@@ -1,5 +1,7 @@
 .content {
-
+    display: grid;
+    grid-template-areas:
+    "t t";
 }
 
 .title {

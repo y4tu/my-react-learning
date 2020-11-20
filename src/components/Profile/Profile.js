@@ -11,7 +11,12 @@ const Profile = (props) => {
             <Title className="visually-hidden" title="Profile"/>
             <Wallpaper/>
             <Id IdData={props.state.IdData}/>
-            <MyPosts PostsData={props.state.PostsData}/>
+            <MyPosts
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
+                PostsData={props.state.PostsData}
+                NewPostText={props.NewPostText}
+            />
         </section>
     )
 };

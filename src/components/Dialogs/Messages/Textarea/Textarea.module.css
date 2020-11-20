@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    background: lightslategray;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.messageText {
+    flex-basis: calc(75% - 5px);
+    height: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    padding: 10px;
+    resize: none;
+}
+
+.messageText::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.sendButton {
+    border: whitesmoke solid 3px;
+    border-radius: 10px;
+    background: transparent;
+    flex-basis: calc(25% - 5px);
+    height: auto;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}

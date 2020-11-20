@@ -9,7 +9,11 @@ const Dialogs = (props) => {
         <section className={classes.dialogs}>
             <Title title="Dialogs"/>
             <Company CompanyData={props.state.CompanyData}/>
-            <Messages MessagesData={props.state.MessagesData}/>
+            <Messages
+                addMessage={props.addMessage}
+                updateNewMessageText={props.updateNewMessageText}
+                MessagesData={props.state.MessagesData}
+            />
         </section>
     )
 }

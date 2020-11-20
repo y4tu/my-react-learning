@@ -4,6 +4,7 @@
 
 .item {
     display: flex;
+    min-width: 134px;
     align-items: center;
     background: whitesmoke;
     border-radius: 10px;

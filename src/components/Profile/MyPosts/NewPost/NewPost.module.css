@@ -2,13 +2,12 @@
     width: 100%;
     height: auto;
     background: lightslategray;
-    /*border: lightslategray solid 3px;*/
     border-radius: 10px;
 }
 
 .title {
     color: whitesmoke;
-    padding-left: 10px;
+    padding: 10px 0 0 40px;
     margin: 0;
 }
 
@@ -26,6 +25,17 @@
     resize: none;
     margin-bottom: 10px;
     background: whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.textarea::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #444444;
 }
 
 .send {

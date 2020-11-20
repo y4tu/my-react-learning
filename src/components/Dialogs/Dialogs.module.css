@@ -1,5 +1,7 @@
 .dialogs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+    "t t"
+    "d m";
+    grid-gap: 20px;
 }

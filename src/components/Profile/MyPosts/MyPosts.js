@@ -6,7 +6,10 @@ import Posts from './Posts/Posts';
 const MyPosts = (props) => {
     return (
         <div className={classes.news}>
-            <NewPost />
+            <NewPost addPost={props.addPost}
+                     updateNewPostText={props.updateNewPostText}
+                     NewPostText={props.NewPostText}
+            />
             <Posts PostsData={props.PostsData}/>
         </div>
     )

@@ -1,4 +1,5 @@
 .profile {
+    grid-area: i;
     display: flex;
     margin-bottom: 10px;
 }

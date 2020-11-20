@@ -1,5 +1,5 @@
 .company {
-    flex-basis: calc(40% - 10px);
+    grid-area: d;
     padding: 20px;
     background: lightslategray;
     border-radius: 10px;
