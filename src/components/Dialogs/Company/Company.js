@@ -3,7 +3,7 @@ import classes from './Company.module.css'
 import Companion from './Companion/Companion';
 
 const Company = (props) => {
-    const renderCompany = props.CompanyData.map(item => <Companion
+    const renderCompany = props.companyData.map(item => <Companion
         key={item.NAME.toString()}
         avatar={item.AVATAR}
         name={item.NAME}

@@ -1,6 +1,6 @@
 .messages {
     grid-area: m;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
     background: lightslategray;
     border-radius: 10px;
     list-style: none;

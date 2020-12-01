@@ -1,4 +1,4 @@
-const NavbarData = [
+const initialState = [
     {ROUTE: `/profile`, OPTION: `Profile`},
     {ROUTE: `/dialogs`, OPTION: `Dialogs`},
     {ROUTE: `/news`, OPTION: `News`},
@@ -6,4 +6,10 @@ const NavbarData = [
     {ROUTE: `/settings`, OPTION: `Settings`},
 ];
 
-export default NavbarData;
+const navbarReducer = (state = initialState, action) => {
+
+
+    return state;
+};
+
+export default navbarReducer;

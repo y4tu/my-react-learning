@@ -1,19 +1,15 @@
 import React from 'react';
 import classes from './Dialogs.module.css'
-import Company from './Company/Company';
-import Messages from './Messages/Messages';
 import Title from '../Title/Title';
+import CompanyContainer from "./Company/Company-container";
+import MessagesContainer from "./Messages/Messages-container";
 
 const Dialogs = (props) => {
     return (
         <section className={classes.dialogs}>
             <Title title="Dialogs"/>
-            <Company CompanyData={props.state.CompanyData}/>
-            <Messages
-                addMessage={props.addMessage}
-                updateNewMessageText={props.updateNewMessageText}
-                MessagesData={props.state.MessagesData}
-            />
+            <CompanyContainer store={props.store}/>
+            <MessagesContainer store={props.store}/>
         </section>
     )
 }

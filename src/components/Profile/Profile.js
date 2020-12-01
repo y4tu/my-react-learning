@@ -1,22 +1,17 @@
 import React from 'react';
 import classes from './Profile.module.css'
 import Wallpaper from './Wallpaper/Wallpaper';
-import Id from './Id/Id';
-import MyPosts from './MyPosts/MyPosts';
+import MyPosts from './MyPosts/My-posts';
 import Title from '../Title/Title';
+import IdContainer from "./Id/Id-container";
 
-const Profile = (props) => {
+const Profile = () => {
     return (
         <section className={classes.content}>
             <Title className="visually-hidden" title="Profile"/>
             <Wallpaper/>
-            <Id IdData={props.state.IdData}/>
-            <MyPosts
-                addPost={props.addPost}
-                updateNewPostText={props.updateNewPostText}
-                PostsData={props.state.PostsData}
-                NewPostText={props.NewPostText}
-            />
+            <IdContainer/>
+            <MyPosts/>
         </section>
     )
 };

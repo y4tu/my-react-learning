@@ -1,7 +1,21 @@
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {renderEntireTree} from "./render";
-import state, {addMessage, addPost, updateNewPostText, updateNewMessageText} from "./redux/state";
+import store from "./redux/Redux-store";
+import ReactDOM from "react-dom";
+import App from "./App";
+import React from "react";
+import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
 
-renderEntireTree(state, addPost, addMessage, updateNewPostText, updateNewMessageText);
+ReactDOM.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
+);
+
 reportWebVitals();

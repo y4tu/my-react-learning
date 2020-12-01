@@ -1,10 +1,9 @@
 import React from 'react';
 import classes from './Navbar.module.css';
 import Item from './Item/Item';
-import NavbarData from "./NavbarData";
 
-const Navbar = () => {
-    const renderNavbar = NavbarData.map(item => <Item
+const Navbar = (props) => {
+    const renderNavbar = props.navbarData.map(item => <Item
         key={item.OPTION.toString()}
         route={item.ROUTE}
         option={item.OPTION}/>);

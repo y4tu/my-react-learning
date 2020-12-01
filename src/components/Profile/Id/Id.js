@@ -3,7 +3,10 @@ import classes from './Id.module.css'
 import Item from './Items/Item';
 
 const Id = (props) => {
-    const renderId = props.IdData.map(item => <Item key={item.PROPERTY.toString()} property={item.PROPERTY} value={item.VALUE}/>);
+    const renderId = props.idData.map(item => <Item
+            key={item.PROPERTY.toString()}
+            property={item.PROPERTY}
+            value={item.VALUE}/>);
 
     return (
         <div className={classes.profile}>

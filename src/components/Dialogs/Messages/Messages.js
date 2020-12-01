@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Messages.module.css'
 import Message from './Message/Message';
-import Textarea from "./Textarea/Textarea";
+import NewMessageContainer from "./New-message/New-message-container";
 
 const Messages = (props) => {
-    const renderMessages = props.MessagesData.map(item =>
+    const renderMessages = props.messagesData.map(item =>
         <Message
             key={item.COUNTER.toString()}
             user={item.USER}
@@ -17,12 +17,9 @@ const Messages = (props) => {
             <ul className={classes.messagesHistory}>
                 {renderMessages}
             </ul>
-            <Textarea
-                addMessage={props.addMessage}
-                updateNewMessageText={props.updateNewMessageText}
-            />
+            <NewMessageContainer store={props.store}/>
         </div>
     )
-}
+};
 
 export default Messages;
