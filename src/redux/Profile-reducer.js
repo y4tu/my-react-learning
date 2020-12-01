@@ -36,9 +36,10 @@ const initialState = {
 
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
+        case ActionTypes.UPDATE_NEW_POST_TEXT: {
+            return {...state, NewPostText: action.newPostText};
+        }
         case ActionTypes.ADD_POST: {
-            let stateCopy = {...state};
-
             let newPost = {
                 COUNTER: state.PostsData.length,
                 AVATAR: `/img/1551511791_8.jpg`,
@@ -46,18 +47,7 @@ const profileReducer = (state = initialState, action) => {
                 LIKE_COUNT: `0 Likes`
             };
 
-            stateCopy.PostsData = [...state.PostsData];
-            stateCopy.PostsData.push(newPost);
-            stateCopy.NewPostText = ``;
-
-            return stateCopy;
-        }
-        case ActionTypes.UPDATE_NEW_POST_TEXT: {
-            let stateCopy = {...state};
-
-            stateCopy.NewPostText = action.newPostText;
-
-            return stateCopy;
+            return {...state, PostsData: [...state.PostsData, newPost], NewPostText: ``};
         }
         default:
             return state;
